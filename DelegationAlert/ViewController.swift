@@ -42,6 +42,7 @@ extension ViewController : UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
     
         cell.modelCell = controllerModel
+        cell.delegate = self 
     
         return cell
     }
